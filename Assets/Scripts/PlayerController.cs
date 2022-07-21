@@ -22,17 +22,6 @@ public class PlayerController : MonoBehaviour//, PlayerControls.IPlayerActions
         }
     }
 
-    public void OnEnable()
-    {
-        //if (_controls == null)
-        //{
-        //    _controls = new PlayerControls();
-        //    _controls.Player.SetCallbacks(this);
-        //}
-        //_controls.Player.Enable();
-    }
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -62,12 +51,10 @@ public class PlayerController : MonoBehaviour//, PlayerControls.IPlayerActions
         var position = new Vector2(this._rigidbody.position.x + Velocity * Time.fixedDeltaTime * Mathf.Sign(_xMovement), this._rigidbody.position.y);
         this._rigidbody.MovePosition(position);
 
-        this._xMovement = 0;
     }
 
     public void OnMove(InputValue input)
     {
-        //var movement = context.ReadValue<float>();
-        Debug.Log(input.Get<float>());
+        _xMovement = input.Get<float>();
     }
 }
