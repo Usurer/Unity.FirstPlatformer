@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 1301678668}
   - component: {fileID: 1301678671}
   - component: {fileID: 1301678672}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -401,6 +401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Velocity: 5
+  JumpForce: 4
 --- !u!114 &1301678672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,7 +444,7 @@ GameObject:
   - component: {fileID: 2014999842}
   - component: {fileID: 2014999841}
   - component: {fileID: 2014999843}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
